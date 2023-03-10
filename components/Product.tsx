@@ -7,6 +7,7 @@ type Props = {
 const Product = ({ title, price, image }: Props) => {
 
 
+
     return <div>
         <div>
             <img src={image} alt="" />

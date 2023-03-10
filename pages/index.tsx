@@ -14,8 +14,8 @@ export default function Home() {
   if (fetching) return <p>Loading...</p>;
   if (error) return <p>Oh no... {error.message}</p>;
   const products: Array<ProductInterface> = data.products.data
+console.log(products);
 
-  console.log(products);
 
 
 

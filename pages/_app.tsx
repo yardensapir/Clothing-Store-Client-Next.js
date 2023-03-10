@@ -1,9 +1,13 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
+import { ReactNode } from 'react'
 import { Provider, createClient } from 'urql'
+import enviorments from "../config/enviorments"
+
+const base = enviorments.baseUrl
 
 const client = createClient({
-  url: 'http://localhost:1337/graphql'
+  url: base
 })
 
 export default function App({ Component, pageProps }: AppProps) {
